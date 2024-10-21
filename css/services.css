@@ -1,0 +1,860 @@
+.sidebar {
+  height: 100%;
+  width:0px;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+.sidebar.active {
+  display: block; /* عرض القائمة الجانبية عند إضافة class "active" */
+  width: 350px; /* عرض القائمة عند فتحها */
+}
+section{
+  overflow: hidden;
+}
+.sidebar img{
+  position: absolute;
+  top: 20px;
+  right: 170px;
+  margin-top: 20px;
+}
+.sidebar .a1{
+  margin-top: 30px;
+}
+.sidebar a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+  /* border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffffff; */
+}
+
+.sidebar a:hover {
+  background-color: #f3f3f3;
+}
+
+/* زر الإغلاق */
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  margin-top: 20px;
+  font-size: 25px;
+  margin-left: 50px;
+  background-color: #ff5722;
+  color: #ffffff;
+  width: 40px !important;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px !important;
+}
+.sidebar .closebtn:hover{
+  background-color: #000000;
+}
+
+/* تعديل الـ navbar-toggler ليكون فعالاً مع القائمة الجانبية */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.navbar {
+  background-color: #F3F2EF !important;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+  font-family: "Bai Jamjuree", Sans-serif;
+  z-index: 1000;
+}
+.scrolled {
+  background-color: #ffffff !important; /* اللون الجديد عند النزول */
+}
+
+.firstSection .navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  color: #575A5F;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+  transition: color 0.2s ease;
+}
+
+.firstSection .navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #ff6400;
+}
+.firstSection .navbar .navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  width: 0;
+  height: 1px;
+  background-color: #FF6400; /* لون الـ border */
+  transition: width 0s ease; /* تأثير التحول على الـ border */
+}
+
+.firstSection .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%; /* يظهر الخط بطول النص عند التمرير */
+}
+
+.firstSection .navbar .container a span {
+  color: #ff6400;
+}
+
+.firstSection .navbar .container a {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+/* general styles */
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #a9a9a9;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: none;
+    outline: none;
+  }
+  h4,
+  h5 {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  :root {
+    --main-color: #ff6400;
+    --text-color: #f1f1f1;
+  }
+  .fclass{
+    background-color: #f2f1ef;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .fclass h6{
+    font-family: "Bai Jamjuree", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  /* end general styles */
+  
+  #skills .photo img {
+    height: auto;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: unset;
+  }
+  .services .services-div .arrow-btn:hover i{
+    color:#ffffff;
+    transition: color 0.6s ease;
+  }
+ 
+
+  /* start Testimonials  */
+  #testimonial .testimonials {
+    background-color: black;
+    color: #ffff;
+    min-height: 100vh;
+    padding: 30px 16px;
+  }
+  
+  #testimonial .testimonials .btn,
+  .email-section .gmail .btn {
+    background-color: #FF6400;
+    border: 0px;
+    border-radius: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 15px 25px;
+
+  }
+  
+  #testimonial .btn:hover {
+    background-color: white;
+    color: #ff6400;
+    border: 1px solid #ff6400;
+  }
+  
+  #testimonial .testimonials img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #testimonial .testimonials .row button i {
+    position: relative;
+    top: 2px;
+    right: -5px;
+  }
+  
+  #testimonial .testimonials .cup {
+    border-bottom: #5c5c5c solid 0.5px;
+  }
+  
+  #testimonial .about .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #testimonial .about h3 {
+    color: #ff6400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 60px;
+  }
+  
+  #testimonial .about p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  
+  #testimonial .about .image {
+    width: 330px;
+    height: 330px;
+    background-color: #ffff;
+  }
+  
+  #testimonial .about .image img {
+    width: 360px;
+    height: 380px;
+    position: relative;
+    bottom: 50px;
+    left: -33px;
+    filter: grayscale(1);
+  }
+  #testimonial .about .image img:hover{
+    filter: none;
+  }
+  
+  #testimonial .about .text-box {
+    background-color: black;
+    color: white;
+    width: 202px;
+    height: 68px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 80px;
+    left: 64px;
+  }
+  
+  #testimonial .about .qoutes {
+    width: 110px;
+    height: 90px;
+  }
+  
+  /* end testimonials */
+  
+  
+  .contact-section {
+    padding: 50px 0;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  .social-media {
+    margin-top: 50px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .icon {
+    background-color: #fff; /* خلفية الأيقونة */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* تأثير الانتقال */
+  }
+  .icon:hover i{
+    color: white;
+   }
+  
+  .icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+  }
+  
+  .icon a i {
+    color: black;
+    font-size: 16px !important;
+  }
+  
+  .icon:hover {
+    transform: scale(0.9);
+    background-color: #ff6200;
+  }
+  
+  .icon a .icon:hover {
+    color: rgba(0, 0, 0, 0.167) !important;
+  
+    transform: translateX(70%);
+    -webkit-transform: translateX(70%);
+    -moz-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    -o-transform: translateX(70%);
+  }
+  
+  .contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    color: black;
+  }
+  
+  .btn-orange {
+    background-color: #ff5722;
+    color: white;
+  }
+  .contact-us {
+    line-height: 40px;
+  }
+  .contact-us p {
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  
+  .contact-form {
+    background-color: #f7f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-group.col-md-6 {
+    flex: 1;
+  }
+  
+  #message {
+    resize: none;
+    padding: 15px;
+  }
+  
+  .btn-orange {
+    background-color: #ff6200;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-orange:hover {
+    background-color: #ff8c32;
+    color: #f1f1f1;
+  }
+  
+  .btn-small {
+    padding: 8px 16px;
+  }
+  /* footer section */
+  .footer-section {
+    padding: 50px 0;
+    background-color: #121212;
+  }
+  
+  .email-section {
+    text-align: left;
+    padding: 100px 400px;
+  }
+  .email-section .gmail .btn:hover {
+    background-color: white;
+    color: #ff6400;
+    border: 1px solid #ff6400;
+  }
+  .email-section h2 {
+    font-size: 2rem;
+  }
+  
+  .email-section .btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .email-section .btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .footer-column h5 {
+    font-weight: bold;
+  }
+  
+  .footer-column p,
+  .footer-column ul,
+  .footer-column a {
+    color: #aaa;
+  }
+  
+  .footer-column a:hover {
+    color: white;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  .footer-column ha:hover {
+    color: red !important;
+  }
+  
+  /* start Services */
+  .home-header {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .home-header h6 {
+    color: black;
+    span {
+      color: #ff6200;
+    }
+  }
+  .services-header img {
+    height: auto;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: unset;
+  }
+  .services-header .services-title h5 {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: unset;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+  }
+  .services .services-div {
+    height: 400px;
+    width: 500px;
+    background-color: #f3f2ef;
+    padding: 20px 20px 20px 20px;
+    align-content: center;
+    align-items: center;
+    margin: 65px 0px 0px 65px;
+  }
+  
+  .services .services-div .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .services .services-div .project-item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .services .services-div .project-item img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+  
+  .services .services-div .project-item h3 {
+    font-size: 23px;
+    font-family: "Bai Jamjuree", Sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    color: #000000;
+  }
+  
+  .services .services-div .project-item p {
+    font-size: 15px;
+    color: #797979;
+    font-family: "Heebo", Sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+  
+  .services .services-div .arrow-btn {
+    border: 2px solid #ff6400;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.6s ease;
+    transition: color 0.6s ease;
+  }
+  
+  .services .services-div .arrow-btn:hover {
+    background-color: #ff6400;
+    transition: background-color 0.6s ease;
+   outline: 2px solid #fff;
+  }
+  
+  .services .services-div .arrow-btn i {
+    position: relative;
+    top: 0;
+    right: 0;
+    rotate: 300deg;
+    color: #e64a19;
+  }
+  .services .services-div .arrow-btn i:hover{
+    color: white;
+  }
+  .services .services-div .underline {
+    width: 400px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    vertical-align: middle;
+    margin-left: 42px;
+  }
+  
+  .discount-yard {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .discount-yard .sep {
+    width: 300px;
+    margin: auto;
+  }
+  .discount-yard .row {
+    padding: 40px 0px;
+  }
+  
+  .discount-yard .row .col-lg-4 {
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f2ef;
+  }
+  
+  .discount-yard .row .first-card p,
+  .discount-yard .row .third-card p {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .discount-yard .row .true .fa-circle-check {
+    color: #ff6400;
+  }
+  
+  .discount-yard .row h2 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  .discount-yard .row button {
+    background-color: #ff6400;
+    margin-top: 13px;
+    border: 0px;
+    border-radius: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 15px 25px;
+  }
+  .discount-yard .row button i {
+    position: relative;
+    top: 3px;
+    right: 0;
+    rotate: 300deg;
+  }
+  .discount-yard .row button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+  
+  }
+  .discount-yard .second-card button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+  }
+  .discount-yard .second-card h4 {
+    color: white;
+  }
+  
+  .discount-yard .second-card p {
+    color: #60746f;
+  }
+  
+  .discount-yard .second-card h2 {
+    color: #ff6400;
+  }
+  
+  .discount-header img {
+    height: auto;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: unset;
+  }
+  .discount-header .discount-title h5 {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: unset;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+  }
+  
+  .ques .projects-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-right: 80px;
+  }
+  .ques ques-photo img {
+    height: auto;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: unset;
+  }
+  .ques .projects-header p {
+    color: #777;
+    margin-bottom: 40px;
+  }
+  .ques .col h6 {
+    font-size: 1rem;
+    margin: 0px 0px 0px -2px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+  }
+  .ques .row button {
+    background-color: #ff6400;
+    margin-top: 13px;
+    border: 0px;
+    color: white;
+    border-radius: 0;
+    font-size: 13px;
+    font-family: sans-serif;
+    width: 170px;
+    height: 50px;
+  }
+  .ques .row button i {
+    position: relative;
+    top: 3px;
+    right: 0;
+    rotate: 300deg;
+  }
+  .ques .row button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+  }
+  .left .faq {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .left .faq .faq-item {
+    margin-bottom: 15px;
+    padding: 1px;
+    border-bottom: 1px solid #a9a9a9;
+  }
+  
+  .left .faq .faq-item .faq-title {
+    background-color: #f7f7f7;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  .left .faq .faq-item .faq-title .about-btn{
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+  }
+  .left .faq .faq-item .faq-title .about-btn1{
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  }
+  .left .faq .faq-item .faq-title .about-btn1 i{
+   margin-left: 70px;
+  }
+  .faq-content {
+    display: none;
+    background-color: #fff;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .faq-content p {
+    margin: 0;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+    color:var(--main-color) ;
+    margin-left: 190px;
+    
+  }
+  
+  .faq-item.active .arrow {
+    transform: rotate(90deg);
+  }
+  
+  .left .faq .faq-item .active .faq-content {
+    display: block;
+    transition: transform 0.3s ease;
+  
+  }
+  
+  
+  .left .faq .faq-item.active .faq-title {
+    color: #ff5722; 
+  }
+  /* قواعد للشاشات الصغيرة - الهواتف */
+ 
+@media (max-width: 476px) {
+  .services .services-div {
+      width: 100%; /* العرض كاملًا */
+      margin: 15px 0; /* تقليل الهوامش أكثر */
+      height: auto; /* إلغاء الارتفاع الثابت */
+  }
+
+  .services .project-item {
+      flex-direction: column; /* ترتيب العناصر عموديًا */
+      text-align: center; /* جعل النص في الوسط */
+  }
+
+  .services .project-item img {
+      width: 90%; /* تكبير الصورة لتناسب العرض الصغير */
+      margin-bottom: 10px; /* تقليل المسافة أسفل الصورة */
+  }
+
+  .services .card-title {
+      margin-bottom: 10px; /* تقليل المسافة أسفل العنوان */
+  }
+
+  .services .arrow-btn {
+      margin: 5px auto; /* ضبط المسافة حول السهم */
+  }
+
+  .underline {
+      display: none; /* إخفاء الخط الفاصل في الهواتف */
+  }
+}
+
+@media (max-width: 767px) {
+  .services .services-div {
+      width: 100%; /* العرض كاملًا */
+      margin: 20px 0; /* تقليل الهوامش */
+      height: auto; /* إلغاء الارتفاع الثابت */
+  }
+
+  .services .project-item {
+      flex-direction: row; /* ترتيب العناصر عموديًا */
+      text-align: center; /* جعل النص في الوسط */
+  }
+
+  .services .project-item img {
+      width: 80%; /* تصغير الصورة */
+      margin-bottom: 15px; /* إضافة مسافة تحت الصورة */
+  }
+
+  .services .card-title {
+      margin-bottom: 15px; /* مسافة أسفل العنوان */
+  }
+
+  .services .arrow-btn {
+      margin: 0 auto; /* جعل السهم في المنتصف */
+  }
+
+  .underline {
+      display: none; /* إخفاء الخط الفاصل في الهواتف */
+  }
+}
